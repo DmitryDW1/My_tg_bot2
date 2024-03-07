@@ -18,7 +18,8 @@ load_dotenv(find_dotenv())
 ALLOWED_UPDATES = ['message', 'edited_message']
 
 
-bot = Bot(token=os.getenv('TOKEN'), default=DefaultBotProperties(parse_mode=ParseMode.HTML)) # Здесь отличие - в видеоуроке код устаревший
+bot = Bot(token=os.getenv('TOKEN'), default=DefaultBotProperties(parse_mode=ParseMode.HTML)) # Здесь отличие -
+# в видеоуроке код устаревший
 dp = Dispatcher()
 
 dp.include_router(user_private_router)
